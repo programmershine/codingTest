@@ -9,6 +9,7 @@ class Solution {
         int maxLength = Math.max(alen, blen);
         
         for (int i = 0; i < maxLength; i++) {
+            //유니코드에서 정수만큼 남기려고 '0' 빼줌
             int anum = i < alen ? a.charAt(alen - 1 - i) - '0' : 0;
             int bnum = i < blen ? b.charAt(blen - 1 - i) - '0' : 0;
 
