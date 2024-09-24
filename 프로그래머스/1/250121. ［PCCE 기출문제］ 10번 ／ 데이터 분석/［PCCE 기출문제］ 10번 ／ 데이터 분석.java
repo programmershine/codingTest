@@ -66,3 +66,47 @@ class Solution {
         return answer;
     }
 }
+
+
+
+//간단한 식도있음.
+//import java.util.*;
+//
+//class Solution {
+//    public int[][] solution(int[][] data, String ext, int val_ext, String sort_by) {
+//        final int resultSort;  // final로 선언
+//        int extType = 0;
+//        ArrayList<int[]> filteredList = new ArrayList<>();
+//
+        // 정렬 기준 설정
+//       if (sort_by.equals("code")) {
+//            resultSort = 0;
+//        } else if (sort_by.equals("date")) {
+//            resultSort = 1;
+//        } else if (sort_by.equals("maximum")) {
+//            resultSort = 2;
+//        } else if (sort_by.equals("remain")) {
+//            resultSort = 3;
+//        } else {
+//            throw new IllegalArgumentException("Invalid sort_by value");
+//        }
+
+        // 필터링
+//        for (int[] entry : data) {
+//            if ((ext.equals("code") && entry[0] < val_ext) ||
+//                (ext.equals("date") && entry[1] < val_ext) ||
+//                (ext.equals("maximum") && entry[2] < val_ext) ||
+//                (ext.equals("remain") && entry[3] < val_ext)) {
+//                filteredList.add(entry);
+//            }
+//        }
+
+        // 결과 배열로 변환
+//        int[][] result = filteredList.toArray(new int[filteredList.size()][]);
+
+        // 정렬
+//        Arrays.sort(result, (a, b) -> Integer.compare(a[resultSort], b[resultSort]));
+
+//        return result;
+//    }
+//}
